@@ -65,7 +65,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -284,7 +284,7 @@
             // 
             // button15
             // 
-            this.button15.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.button15.BackColor = System.Drawing.SystemColors.HighlightText;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -437,7 +437,7 @@
             // operationBar
             // 
             this.operationBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.operationBar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.operationBar.BackColor = System.Drawing.SystemColors.HighlightText;
             this.operationBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.operationBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.operationBar.Location = new System.Drawing.Point(4, 48);
@@ -513,7 +513,7 @@
             // progrBar
             // 
             this.progrBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.progrBar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.progrBar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.progrBar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.progrBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.progrBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -529,9 +529,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(3, 141);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(3, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 20);
             this.label2.TabIndex = 33;
@@ -541,7 +542,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(420, 582);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progrBar);

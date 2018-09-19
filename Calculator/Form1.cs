@@ -52,7 +52,7 @@ namespace Calculator
 
             Button bt = (Button)sender;
             operationBar.Text += bt.Text;
-            progrBar.Text += operationBar.Text;
+            progrBar.Text += bt.Text;
         }
 
         //ends numbers
