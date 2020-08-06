@@ -12,8 +12,8 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
-        private double number1 = 0;
-        private double number2 = 0;
+        private double num1 = 0;
+        private double num2 = 0;
         private double result = 0;
         private string operation = "";
         private bool isMinus = false;
@@ -69,9 +69,9 @@ namespace Calculator
             if (!string.IsNullOrEmpty(operationBar.Text))
             {
                 if (isMinus)
-                    number1 = Convert.ToDouble(operationBar.Text) * -1;
+                    num1 = Convert.ToDouble(operationBar.Text) * -1;
                 else
-                    number1 = Convert.ToDouble(operationBar.Text);
+                    num1 = Convert.ToDouble(operationBar.Text);
                 isMinus = false;
                 Button bt = (Button)sender;
                 operation = bt.Text.ToString();
@@ -84,8 +84,8 @@ namespace Calculator
 
         private void clear_Click(object sender, EventArgs e)
         {
-            number1 = 0;
-            number2 = 0;
+            num1 = 0;
+            num2 = 0;
             result = 0;
             operationBar.Clear();
             progrBar.Clear();
@@ -106,49 +106,49 @@ namespace Calculator
             if (!operationBar.Text.Contains("=") && operationBar.Text != "")
             {
                 if (isMinus)
-                    number2 = Convert.ToDouble(operationBar.Text) * -1;
+                    num2 = Convert.ToDouble(operationBar.Text) * -1;
                 else
-                    number2 = Convert.ToDouble(operationBar.Text);
+                    num2 = Convert.ToDouble(operationBar.Text);
                 switch (operation)
                 {
                     case "+":
                         {
-                            result = number1 + number2;
+                            result = num1 + num2;
                             operationBar.Text = result.ToString();
                             if (isMinus)
-                                progrBar.Text = $"{number1} + ({number2}) = {result}";
+                                progrBar.Text = $"{num1} + ({num2}) = {result}";
                             else
-                                progrBar.Text = $"{number1} + {number2} = {result}";
+                                progrBar.Text = $"{num1} + {num2} = {result}";
                         }
                         break;
                     case "-":
                         {
-                            result = number1 - number2;
+                            result = num1 - num2;
                             operationBar.Text = result.ToString();
                             if (isMinus)
-                                progrBar.Text = $"{number1} - ({number2}) = {result}";
+                                progrBar.Text = $"{num1} - ({num2}) = {result}";
                             else
-                                progrBar.Text = $"{number1} - {number2} = {result}";
+                                progrBar.Text = $"{num1} - {num2} = {result}";
                         }
                         break;
                     case "*":
                         {
-                            result = number1 * number2;
+                            result = num1 * num2;
                             operationBar.Text = result.ToString();
                             if (isMinus)
-                                progrBar.Text = $"{number1} * ({number2}) = {result}";
+                                progrBar.Text = $"{num1} * ({num2}) = {result}";
                             else
-                                progrBar.Text = $"{number1} * {number2} = {result}";
+                                progrBar.Text = $"{num1} * {num2} = {result}";
                         }
                         break;
                     case "/":
                         {
-                            result = number1 / number2;
+                            result = num1 / num2;
                             operationBar.Text = result.ToString();
                             if (isMinus)
-                                progrBar.Text = $"{number1} / ({number2}) = {result}";
+                                progrBar.Text = $"{num1} / ({num2}) = {result}";
                             else
-                                progrBar.Text = $"{number1} / {number2} = {result}";
+                                progrBar.Text = $"{num1} / {num2} = {result}";
                         }
                         break;
                 }
